@@ -1,0 +1,14 @@
+checkpoint:
+  path: "whisper_lfcc_lcnn_finetuned/weights.pth"
+data:
+  seed: 42
+model:
+  name: whisper_frontend_lcnn
+  optimizer:
+    lr: 0.000001
+    weight_decay: 0.0001
+  parameters:
+    freeze_encoder: False
+    frontend_algorithm:
+    - lfcc
+    input_channels: 2

@@ -1,0 +1,13 @@
+checkpoint:
+  path: "lfcc_lcnn/weights.pth"
+data:
+  seed: 42
+model:
+  name: lcnn
+  optimizer:
+    lr: 0.0001
+    weight_decay: 0.0001
+  parameters:
+    frontend_algorithm:
+    - lfcc
+    input_channels: 1
